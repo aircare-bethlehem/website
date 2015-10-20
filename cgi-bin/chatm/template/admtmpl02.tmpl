@@ -1,0 +1,88 @@
+<HTML>
+<HEAD>
+<TITLE>
+Staff menu
+</TITLE>
+</HEAD>
+<BODY bgcolor=#4B5889 text=#FFFFFF link=#7FFFD4 alink=#FF0000 vlink=#E11184>
+<TABLE WIDTH=100% BORDER=0>
+<TR BGCOLOR="#7F0000"><TD COLSPAN=2 ALIGN=CENTER VALIGN=CENTER>USERS</TD></TR>
+<TR><TD ALIGN=CENTER VALIGN=CENTER>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now" TARGET="data">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="cmd" type="hidden" value="noCMD">
+<INPUT NAME="tmpl" type="hidden" value="04">
+<INPUT type="submit" value="See Logged">
+</FORM></TD><TD ALIGN=CENTER VALIGN=CENTER>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now" TARGET="data">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="cmd" type="hidden" value="noCMD">
+<INPUT NAME="tmpl" type="hidden" value="05">
+<INPUT type="submit" value="See All">
+</FORM></TD></TR></TABLE>
+<TABLE WIDTH=100% BORDER=0>
+<TR BGCOLOR="#7F0000"><TD COLSPAN=2 ALIGN=CENTER VALIGN=CENTER>BANNING</TD></TR>
+<TR ALIGN=CENTER VALIGN=CENTER><TD>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now" TARGET="data">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="cmd" type="hidden" value="noCMD">
+<INPUT NAME="tmpl" type="hidden" value="14">
+<INPUT type="submit" value="Nick Name">
+</FORM></TD><TD>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now" TARGET="data">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="cmd" type="hidden" value="noCMD">
+<INPUT NAME="tmpl" type="hidden" value="15">
+<INPUT type="submit" value="Host addr.">
+</FORM></TD></TR>
+<TR ALIGN=CENTER VALIGN=CENTER><TD>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now" TARGET="data">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="cmd" type="hidden" value="noCMD">
+<INPUT NAME="tmpl" type="hidden" value="16">
+<INPUT type="submit" value="IP addr.">
+</FORM></TD><TD>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now" TARGET="data">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="cmd" type="hidden" value="noCMD">
+<INPUT NAME="tmpl" type="hidden" value="09">
+<INPUT type="submit" value="Domain">
+</FORM></TD></TR></TABLE>
+<TABLE WIDTH=100% BORDER=0>
+<TR BGCOLOR="#7F0000"><TD COLSPAN=2 ALIGN=CENTER VALIGN=CENTER>OTHER</TD></TR>
+<TR ALIGN=CENTER VALIGN=CENTER><TD>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now" TARGET="data">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="cmd" type="hidden" value="noCMD">
+<INPUT NAME="tmpl" type="hidden" value="11">
+<INPUT type="submit" value="Send message">
+</FORM></TD><TD>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now" TARGET="data">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="cmd" type="hidden" value="noCMD">
+<INPUT NAME="tmpl" type="hidden" value="17">
+<INPUT type="submit" value="Status">
+</FORM></TD></TR>
+<TR ALIGN=CENTER VALIGN=CENTER><TD COLSPAN=2>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now" TARGET="data">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="cmd" type="hidden" value="noCMD">
+<INPUT NAME="tmpl" type="hidden" value="18">
+<INPUT type="submit" value="Room handler">
+</FORM>
+</TD></TR>
+</TABLE>
+<HR>
+#chat
+</BODY>
+</HTML>
+

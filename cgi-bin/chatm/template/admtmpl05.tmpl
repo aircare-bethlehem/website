@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Refresh" CONTENT="60; URL=#script_url/adm.pl?passwd=#%passwd&nick=#%nick&tmpl=05&cmd=noCMD">
+</HEAD>
+<BODY bgcolor=#4B5889 text=#FFFFFF link=#7FFFD4 alink=#7FFFD4 vlink=#7FFFD4>
+<TABLE WIDTH="100%" BORDER=0 CELLSPACING=0>
+<TR BGCOLOR="#7F000000"><TD COLSPAN=5>CHAT ACCOUNTS</TD></TR>
+<TR BGCOLOR="#7F000000"><TD>Nick Name</TD><TD>Real Name</TD><TD>Last Login</TD><TD>Last Host</TD><TD>Delete</TD></TR>
+#userlist01
+</TABLE>
+<HR>
+<TABLE WIDTH="100%" BORDER=0>
+<TR><TD>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="tmpl" type="hidden" value="10">
+<INPUT NAME="cmd" type="hidden" value="noCMD">
+<INPUT type="submit" value="Create a new user">
+</FORM></TD><TD>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="tmpl" type="hidden" value="05">
+<INPUT NAME="cmd" type="hidden" value="noCMD">
+<INPUT type="submit" value="Update">
+</FORM>
+</TD></TR>
+</TABLE>
+</BODY>
+</HTML>

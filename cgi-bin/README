@@ -1,0 +1,54 @@
+Your CGI-BIN Directory!
+
+Administrative CGI's and Directories:
+
+         admin - Your administrative utilities directory.  Links 
+		 will take you into here when necessary.  There 
+		 should be no reason to modify the contents of this 
+ 		 directory or it's sub directories in any way.
+
+	http://www.yoursite.com/admin/ will contain numerous web based 
+	CGI's.  Please see our on-line hosting manual (located off the
+	above location) for more information.
+
+Pre-Installed CGI Scripts Directories:
+
+The following is a list of standard, pre-installed and mostly
+pre configured CGI scripts available.  For a completed set of 
+documention, please visit:  http://www.yoursite.com/admin/
+
+
+    anitmation - A server side cgi-script graphic animation.
+
+    cgi-lib.pl - A standard CGI Scripting library.  Note:
+		 DO NOT REMOVE THIS FILE!  It is required by 
+		 some administrative and pre-installed scripts.
+
+     countdown - CGI script to count down to a specific date.
+
+       counter - A versatile compiled CGI counter.
+
+     guestbook - Easily allow your on-line visitors to sign in.
+
+         links - Nifty free for all links script.
+
+    rand_image - CGI to display a random image.
+
+     rand_link - CGI to display a random link.
+
+     rand_text - CGI to display a random line of text.
+
+        search - Just a simple web site search program.
+
+      ssicount - Simple Server Side Include Counter.
+  	         (must be used in .shtml file)
+
+      test.cgi - A simple cgi-bin testing script.
+
+         tmail - The Templated Mailer.  Easy and versatile
+		 form mailer.  Please see administrative docs
+		 for more information.  Pay close attention
+		 to the hidden form fields as most ARE
+		 required.
+
+

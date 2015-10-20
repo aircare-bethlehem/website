@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Refresh" CONTENT="60; URL=#script_url/adm.pl?passwd=#%passwd&nick=#%nick&tmpl=04&cmd=noCMD">
+</HEAD>
+<BODY bgcolor=#4B5889 text=#FFFFFF link=#7FFFD4 alink=#7FFFD4 vlink=#7FFFD4>
+<TABLE WIDTH="100%" BORDER=0 CELLSPACING=0>
+<TR BGCOLOR="#7F000000"><TD COLSPAN=4>LOGGED USERS - (#count)</TD></TR>
+<TR BGCOLOR="#7F000000"><TD>Nick Name</TD><TD>Room</TD><TD>Idle time</TD><TD>Kick
+off</TD></TR>
+#loglist02
+</TABLE>
+<HR>
+<TABLE WIDTH="100%" BORDER=0>
+<TR><TD>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="tmpl" type="hidden" value="04">
+<INPUT NAME="cmd" type="hidden" value="kickAll">
+<INPUT type="submit" value="Kick off all user">
+</FORM>
+</TD><TD>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="tmpl" type="hidden" value="04">
+<INPUT NAME="cmd" type="hidden" value="noCMD">
+<INPUT type="submit" value="Update">
+</FORM></TD></TR>
+</TABLE>
+</BODY>
+</HTML>

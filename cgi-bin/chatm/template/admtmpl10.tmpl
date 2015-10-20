@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+</HEAD>
+<BODY bgcolor=#4B5889 text=#FFFFFF link=#7FFFD4 alink=#FF0000 vlink=#E11184>
+<H3>Create a new user - replace user information</H3> 
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="tmpl" type="hidden" value="05">
+<INPUT NAME="cmd" type="hidden" value="newUser">
+<TABLE CELLSPACING=0 BORDER=0>
+<TR BGCOLOR=#8B0000><TH>Nick name :
+<TD><INPUT TYPE="TEXT" NAME="_nick" SIZE="20" MAXLENGHT="20"> 
+<TD ALIGN=CENTER ROWSPAN=2>These fields are <B>required</B>.
+<TR BGCOLOR=#8B0000><TH>Password :
+<TD><INPUT TYPE="PASSWORD" NAME="_passwd" SIZE="20" MAXLENGHT="20">
+<TR><TD COLSPAN=3><BR>
+<TR><TH>Real name :
+<TD><INPUT TYPE="TEXT" NAME="_name" SIZE="20" MAXLENGHT="20"> 
+<TD ALIGN=CENTER ROWSPAN=3>These fields are optional.
+<TR><TH>Last name :
+<TD><INPUT TYPE="TEXT" NAME="_lastname" SIZE="20" MAXLENGHT="20"> 
+<TR><TH>Email :
+<TD><INPUT TYPE="TEXT" NAME="_email" SIZE="20" MAXLENGHT="20">
+</TABLE>
+<P><INPUT TYPE="SUBMIT" VALUE="Create - Replace user file">
+<INPUT TYPE="RESET" VALUE="Clear form">
+</FORM>
+</BODY>
+</HTML>
+

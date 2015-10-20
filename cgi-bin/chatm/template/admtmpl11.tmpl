@@ -1,0 +1,18 @@
+<HTML>
+<HEAD>
+</HEAD>
+<BODY bgcolor=#4B5889 text=#FFFFFF link=#7FFFD4 alink=#FF0000 vlink=#E11184>
+<CENTER><H2>System Message sender</H2></CENTER>
+<BR><BR>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="cmd" type="hidden" value="sendMsg">
+<INPUT NAME="tmpl" type="hidden" value="11">
+You can type a system message to send :<BR>
+<TEXTAREA NAME="message" COLS="50" ROWS="5"></TEXTAREA><P>
+<INPUT type="submit" value="Send message">
+</FORM>
+</BODY>
+</HTML>
+

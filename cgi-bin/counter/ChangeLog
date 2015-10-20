@@ -1,0 +1,55 @@
+ChangeLog file for WWW homepage access counter
+
+Count 1.5
+    (September 11, 1995, 9:00 PM EST)
+    o can be compiled with -DALLOW_FILE_CREATION option. if compiled with
+      this option, the data file will be created if it does not exist in 
+      the directory defined with DataDir and the value defined with st in
+      QUERY_STRING will be written to it. 
+      (suggested by John Anthony Ruchak, http://www.microserve.net/~john/).
+
+    (September 10, 1995)
+    o Advisory data file locking. Datafile will not get messed up by
+      simultaneous Count.cgi processes.
+
+    o Error messages are converted directly from string to image. No
+      included GIF images are needed, will be beneficial for system with
+      low memory. I borrowed the font array and some code from gd library
+      (http://siva.cshl.org/gd/gd.html). Thanks to Tom Boutell
+      (http://sunsite.unc.edu/boutell/index.html).
+
+    o Authorized host names can be in configuraton file. To handle 
+      "Counter Terrorism", the source code modification is not 
+      necessary.
+
+    o added flag -debug for command line testing. Therefore, compiling the
+      program with -DDEBUG is not necessary anomore.
+
+Count 1.4
+    (August 27, 1995)
+    o wigingto@umr.edu suggested to use HTTP_REFERER for checking remote
+      access to the counter.
+
+    o randerso@bite.db.uth.tmc.edu sent some code segment to account for
+      port numbers at the end of a referer URL.
+
+    o Ornamental frame with user defined color and thickness on the fly.
+
+    o maximum number of digits can be >= 5 or <= 10 (if you use md)
+      (on the fly).
+
+    o if pad=0, the exact number of digits will be displayed without left
+      padding with zeros (on the fly).
+
+    o Any color of the digits can be made transparent on the fly.
+
+    o Digit style can be provied on the fly.
+
+    o sdw@iadfw.net suggested to keep configuration file, data file, digits,
+      log file in separate directories. It will fix a security hole.
+
+    o datafile can be edited.
+
+Count 1.3
+    o Hardcode the base directory of the counter data files.  This will fix
+      a security hole. Thanks to carsten@group.com

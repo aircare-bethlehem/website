@@ -1,0 +1,181 @@
+###################################################################### 
+#
+#     Dream Catchers CGI Scripts               Feel free to modify 
+#     Advertiser                               this script to your 
+#     Created by Seth Leonard                  needs, but please
+#     for Dream Catchers Technologies, Inc.    keep this portion so
+#                                              that I get credit.  
+#     http://dreamcatchersweb.com/scripts      The same goes for 
+#                                              distribution.
+#
+#     (c)1996/1997 Dream Catchers Technologies, Inc.,
+#     All Rights Reserved
+#
+######################################################################
+
+Dream Catchers Technologies, Inc. provides this script free of charge.  However, if you do use this script, a $1.00 donation is appreciated to help support this free resource.  Please send $1.00 to:
+
+Dream Catchers Technologies, Inc.
+P.O. Box 8600
+Kirkland, WA 90834
+(make payments payable to Dream Catchers Technologies, Inc.)
+
+Step by Step Guide to Advertiser
+
+**********************************************************************
+** THIS SCRIPT REQUIRES SERVER SIDE INCLUDES, PLEASE MAKE CONTACT   **
+** WITH YOUR SERVER TO MAKE SURE THAT YOU HAVE THIS OPTION!!!!      **
+**********************************************************************
+
+CONTENTS:
+
+adcount.txt - A file to keep track of which advertiser to display
+adpassword.txt - Password file for administration script
+readme - This file
+ad.cgi - Script to dispaly correct advertiser
+gotoad.cgi - Script to direct links
+admin.cgi - Script to administrate your advertisers
+
+Follow these easy steps:
+
+1.  Contact your server administrator.  Ask them to create a cgi-bin directory for you.  Also ask them how one can access a file in that directory from WWW.  Usually this is "http://www.server.com/you/cgi-bin/".
+
+2.  If you have telnet access to your server, log onto your server.  At the command prompt, type "which perl".  Write down the line given to you.  Usually this is /usr/local/bin/perl.  If you do not have telnet access, ask your server administrator where 
+the perl program resides.
+
+3.  Using your favorite text editor, open the ad.cgi file included in the files you downloaded from the Dream Catchers CGI Scripts page.
+
+4.  The first line of ad.cgi has the line: 
+
+#!/usr/local/bin/perl
+
+If the line you recieved from your server when you typed "which perl" is different, replace the one there.  Keep the #! and don't change anything if it is the same one you were given.
+
+5.  Find the section that says "ONLY EDIT THIS PART OF THE SCRIPT" and change the vaiables so that the match your home directory.
+
+NOTE: The values already placed there are examples!!  These are the common formats for how servers set up directories.  You need to fill in your own values!  DO NOT DELETE THE CHARACTERS OUTSIDE OF THE VALUES: ' " ;
+
+For example, adcount is the path to your adcount.txt file, so you would change:
+
+$adcount = "adcount.txt";
+
+you would change to:
+
+$adcount = "/home/user/htmldocs/adcount.txt";
+
+Change the values of:
+
+$adcount = This file is the path on your server to adcount.txt.  If this file is in the same directory as ad.cgi, then you can simply put adcount.txt
+
+$ads_dir = This directory is the path on your server to the directory in which you will hold the advertiser's info.  If this dir is in the same directory as ad.cgi, then you can simply put ads
+
+$gotoad = The url of the gotoad.cgi script
+
+6.  You are done changing this file.  Save the file as ad.cgi.
+
+7.  Using your favorite text editor, open the gotoad.cgi file included in the files you downloaded from the Dream Catchers CGI Scripts page.
+
+8.  The first line of gotoad.cgi has the line: 
+
+#!/usr/local/bin/perl
+
+If the line you recieved from your server when you typed "which perl" is different, replace the one there.  Keep the #! and don't change anything if it is the same one you were given.
+
+9.  Find the section that says "ONLY EDIT THIS PART OF THE SCRIPT" and change the vaiables so that the match your home directory.
+
+NOTE: The values already placed there are examples!!  These are the common formats for how servers set up directories.  You need to fill in your own values!  DO NOT DELETE THE CHARACTERS OUTSIDE OF THE VALUES: ' " ;
+
+For example, ads is the path to your ads directory, so you would change:
+
+$adcount = "ads";
+
+you would change to:
+
+$adcount = "/home/user/htmldocs/ads";
+
+Change the values of:
+
+$ads_dir = This directory is the path on your server to the directory in which you will hold the advertiser's info.  If this dir is in the same directory as gotoad.cgi, then you can simply put ads
+
+10.  You are done changing this file.  Save the file as gotoad.cgi.
+
+11.  Using your favorite text editor, open the admin.cgi file included in the files you downloaded from the Dream Catchers CGI Scripts page.
+
+12.  The first line of admin.cgi has the line: 
+
+#!/usr/local/bin/perl
+
+If the line you recieved from your server when you typed "which perl" is different, replace the one there.  Keep the #! and don't change anything if it is the same one you were given.
+
+13.  Find the section that says "ONLY EDIT THIS PART OF THE SCRIPT" and change the vaiables so that the match your home directory.
+
+NOTE: The values already placed there are examples!!  These are the common formats for how servers set up directories.  You need to fill in your own values!  DO NOT DELETE THE CHARACTERS OUTSIDE OF THE VALUES: ' " ;
+
+For example, adcount is the path to your adcount.txt file, so you would change:
+
+$adcount = "adcount.txt";
+
+you would change to:
+
+$adcount = "/home/user/htmldocs/adcount.txt";
+
+Change the values of:
+
+$adcount = This file is the path on your server to adcount.txt.  If this file is in the same directory as ad.cgi, then you can simply put adcount.txt
+
+$ads_dir = This directory is the path on your server to the directory in which you will hold the advertiser's info.  If this dir is in the same directory as ad.cgi, then you can simply put ads
+
+$admincgi = The url of the admin.cgi script
+
+14.  You are done changing this file.  Save the file as admin.cgi.
+
+15.  Upload all .cgi and .txt files into your cgi-bin and .htm or .html files to any directory that can be accessed via the web (many servers require that you upload these types of files in ASCII format, check with your server administrator to be sure).
+
+16.  You now need to set the permissions of the files you've uploaded.  You can do this one of two ways.  
+
+	1. TELNET - telnet into your server and go to the directory which holds the files.  Type chmod [permission] filename.  For example: chmod 755 file.cgi.
+
+	2. FTP SOFTWARE - you'll need to find out how to change permissions of the files using your specific program.  Using WS_FTP (recommended), select the file you want to change permissions of and click your right mouse button and select CHMOD (UNIX).  A box
+ will appear with the option to select any number of 9 separate boxes (top row for read, middle row for write, bottom row for execute).  These translate into actual unix permissions.  If the file needs to be a+rx or 755, select every read box and every ex
+ecute box (that is every box on the top and bottom rows).  If the file needs to be a+rw or 666, select every read box and every write box (that is every box on the top and middle rows).  These are the only two permissions you need to worry about.
+
+The files included need to following permissions:
+
+adcount.txt     a+rw or 644
+adpassword.txt  a+rw or 644
+ad.cgi          a+rx or 755
+gotoad.cgi      a+rx or 755
+admin.cgi       a+rx or 755
+
+If you have telnet access, you can also check your scripts for errors by going to the directory they reside in and typing either perl filename.cgi or filename.cgi (depends on your server).  If you get an error, you most likely edited the script where you 
+shouldn't have or forgot to put a " or ; on one of your variable definitions.
+
+21. Go to the url of the admin.cgi script
+
+22. There you should see an html page showing you your options.  From there it is self explanatory.
+
+INFORMATION YOU NEED:
+
+22.1. Your password is currently set at "admin".
+22.2. Name is the name of the advertiser - DO NOT USE SPACES.
+22.3. Exposures Purchased is the number of exposures purchased.
+22.4. URL is the url that the banner should link to.
+22.5. Image URL is the url of the banner for the advertiser.
+22.6. Below Banner is the wording that you want to appear below the advertiser.
+22.7. Font Size is the size of the wording below the banner
+
+23.  In the place you would like to have the counter, use this tag:
+
+<!--#exec cgi="/you/cgi-bin/you/ad.cgi is the path to your ad.cgi file on your server.  So /scripts/cgi-bin/ad.cgi would take you from http://dreamcatchersweb.com/scripts/file.htm to http://dreamcatchersweb.com/scripts/cgi-bin/ad.cgi.  NOTE -- EACH SERVER
+ SETS UP SERVER SIDE INCLUDES DIFFERENTLY, CHECK WITH THEM TO SEE WHICH PATH IS CORRECT.  Usually, the tag you need to use is whatever appears after the domain name in your url.
+
+24.  Warning!!  If you view the html file off-line (from your hard drive), the ad will not appear!  It needs the script on the server to be able to bring in the correct information.
+
+25.  Load the html page from the WWW and you should have a rotating banner.  Now check back at your admin.cgi and you will see that it keeps track of how many times the ad has been displayed, how many times it has been visited, and the percentage of views
+ to visits. Everything working?
+
+26.  Smile, you're done...
+
+All working?  Great!  You now have an advertising system.  If there are problems, please consult http://dreamcatchersweb.com/scripts and chose the Frequently Asked Questions option.  You can also post a message on the User Forum asking for help from other
+ users.  Please do not send email, it WILL NOT be answered.  I apologize for this, but there were just too many requests to be able to offer quality help for all as well as work on new projects.
+

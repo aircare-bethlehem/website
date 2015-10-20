@@ -1,0 +1,11 @@
+<TR ALIGN=CENTER VALIGN=CENTER><TD>#%nick</TD><TD>#%email</TD><TD>#idles.</TD> 
+<TD>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now">
+<INPUT NAME="passwd" type="hidden" value="#adm_passwd">
+<INPUT NAME="nick" type="hidden" value="#adm_nick">
+<INPUT NAME="tmpl" type="hidden" value="04">
+<INPUT NAME="cmd" type="hidden" value="kick">
+<INPUT NAME="#%nick" type="hidden" value="on">
+<INPUT type="submit" value="Kick Off">
+</FORM>
+</TD></TR>

@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<HTML>
+<HEAD>
+<TITLE>ChatMachine98</TITLE>
+<META NAME="Author" CONTENT="Vittorio Nardone (nards@iol.it)">
+</HEAD>
+
+<BODY bgcolor="#CF0000"> 
+<FORM METHOD="POST" ACTION="#script_url/chat.pl?id=#now">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="room" type="hidden" value="#room">
+<INPUT NAME="cmd" type="hidden" value="send">
+<INPUT NAME="tmpl" type="hidden" value="04">
+<TABLE WIDTH=100% BORDER=0>
+<TR>
+<TD>
+<INPUT TYPE="submit" value="Send Message">
+</TD>
+<TD ROWSPAN=2>
+<SELECT NAME="select" MULTIPLE SIZE=4 WIDTH="100">
+<OPTION VALUE="sendall" #sendall>Public
+#loglist05
+</SELECT>
+</TD>
+</TR>
+<TR>
+<TD>
+<TEXTAREA NAME="message" ROWS="2" COLS="80"></TEXTAREA>
+</TD>
+</TR>
+</TABLE>
+</FORM>
+</BODY>
+</HTML>
+

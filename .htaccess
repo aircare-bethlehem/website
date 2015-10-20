@@ -1,0 +1,3 @@
+ErrorDocument 404 /404.htm
+ErrorDocument 401 /401.htm
+CaseInsensitive On

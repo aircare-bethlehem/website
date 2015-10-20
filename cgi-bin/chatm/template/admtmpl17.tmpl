@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+</HEAD>
+<BODY bgcolor=#4B5889 text=#FFFFFF link=#7FFFD4 alink=#FF0000 vlink=#E11184>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="cmd" type="hidden" value="setLogin">
+<INPUT NAME="tmpl" type="hidden" value="17">
+<CENTER><FONT SIZE=+1><TT>Current login status : </TT><I>#login_type</I></FONT></CENTER>
+<HR><BR>
+<TABLE BORDER=0 WIDTH="100%">
+<TR><TD WIDTH="60%">
+<FONT SIZE=+1>To change login status select one option. </FONT></TD>
+<TD>
+<INPUT NAME="logintype" type="radio" value="0"> Open<BR>
+<INPUT NAME="logintype" type="radio" value="1"> Reserved to registered users<BR>
+<INPUT NAME="logintype" type="radio" value="2"> Closed<BR>
+</TD></TR></TABLE>
+<INPUT type="submit" value="Set Login Type">
+</FORM>
+<BR><BR>
+<CENTER><FONT SIZE=+1><TT>Current daemon status : </TT>
+<I>#daemon - Time limit : #timelimit sec.</I></FONT></CENTER>
+<HR><BR>
+<TABLE BORDER=0 WIDTH="100%">
+<TR><TD WIDTH="60%">
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="cmd" type="hidden" value="setDaemon">
+<INPUT NAME="tmpl" type="hidden" value="17">
+<FONT SIZE=+1>Daemon options : </FONT></TD>
+<TD>
+<INPUT NAME="active" type="radio" value="0"> Disable<BR>
+<INPUT NAME="active" type="radio" value="1"> Enable<BR>
+</TD></TR></TABLE>
+Max idle time before logout : <INPUT NAME="time" value="#timelimit" type="text" size="10"
+maxlength="10"> sec.
+<INPUT type="submit" value="Set Daemon">
+</FORM>
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,6 @@
+#!/bin/sh
+rm -f host/*
+rm -f ip/*
+rm -f nick/*
+rm -f domain/*
+

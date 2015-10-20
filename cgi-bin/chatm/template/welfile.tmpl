@@ -1,0 +1,46 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<HTML>
+<HEAD>
+<TITLE>Welcome !</TITLE>
+<META NAME="Author" CONTENT="Vittorio Nardone (nards@iol.it)">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+<TABLE BORDER=0>
+<TR><TD>
+<A HREF="http://www.chatmachine.it"><img src="#html_url/logo98.gif" alt="ChatMachine98"></A>
+<TD><IMG SRC="#html_url/biglogo.gif" alt="ChatMachine"></A>
+</TR>
+</TABLE>
+
+<BR><BR> 
+Hello, <FONT SIZE=+1>#%nick</FONT> (da #%hostname) ! <P>
+Some informations :<BR>
+<TABLE WIDTH=60%>
+<TR><TD>Your real name :<TD>#%name
+<TR><TD>Your email address :<TD>#%email
+<TR><TD>Your IP address :<TD>#%ipadd
+<TR><TD>Your last login :<TD>#%lastlogin
+</TABLE>
+<P>
+Logged users in room <FONT SIZE=+1>#room</FONT> (#rcount):
+<CENTER><TABLE>
+#userlist
+</TABLE></CENTER>
+<HR>
+<CENTER>
+<FORM METHOD="POST" ACTION="#script_url/chat.pl?id=#now">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="select" type="hidden" value="sendall">
+<INPUT NAME="room" type="hidden" value="#room">
+<INPUT NAME="tmpl" type="radio" value="01" CHECKED> Framed version !
+<INPUT NAME="tmpl" type="radio" value="00"> Normal version !<BR>
+<INPUT type="submit" value="Let's go...">
+</FORM>
+</CENTER>
+</BODY>
+</HTML>
+
+

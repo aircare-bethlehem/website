@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+</HEAD>
+<BODY bgcolor=#4B5889 text=#FFFFFF link=#7FFFD4 alink=#FF0000 vlink=#E11184>
+<H3>Domain banning.</H3> Write domain name (without starting point) :
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="domain" type="text" size="40" maxlength="40">
+<INPUT NAME="cmd" type="hidden" value="banDomain">
+<INPUT NAME="tmpl" type="hidden" value="09">
+<INPUT type="submit" value="Ban domain">
+</FORM>
+<P>
+<B>For example :</B> banning &quot;lario.com&quot; domain, all users from 
+&quot;lario.com&quot; will not be able to access chat, but also users from 
+&quot;server2.lario.com&quot;  will not be able to access chat.
+<BR>
+<TABLE WIDTH="100%" BORDER=0>
+<TR><TD>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="cmd" type="hidden" value="noCMD">
+<INPUT NAME="tmpl" type="hidden" value="12">
+<INPUT type="submit" value="See account">
+</FORM>
+</TD><TD>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="cmd" type="hidden" value="noCMD">
+<INPUT NAME="tmpl" type="hidden" value="09">
+<INPUT type="submit" value="See banned domain">
+</FORM>
+</TD></TR>
+</TABLE>
+</BODY>
+</HTML>
+

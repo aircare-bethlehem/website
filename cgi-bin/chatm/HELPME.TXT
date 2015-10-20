@@ -1,0 +1,18 @@
+ChatMachine 1.1 - '98 Edition
+
+How you can help me :
+
+
+1-	Support. You can subscribe yourself to ChatMachine mailing list and help other ChatMachine
+	users to install - customize their ChatMachine installation.
+
+2-	Translation. I need to translate ChatMachine installastion file (install.txt) and documentation
+	(coming soon) to other languages (French, German, Italian, Spanish, Chinese). You can also
+	translate ChatMachine templates. Please mail me before starting traslation.
+
+3-	FTP Mirror.  I need a FTP mirror in North and South America, China, South Africa and Australia.
+	Any other mirror sites are welcome : please report me.
+
+Vittorio Nardone - nards@iol.it
+
+

@@ -1,0 +1,14 @@
+   --------------------
+         Web Mail  
+   --------------------
+
+From:  [*FromName]
+       [*_FROMEMAIL]
+ 
+  To:  [*ToName]
+
+  RE:  [*Subject]
+
+--- BEGIN MAIL MESSAGE ---
+[*MailBody]
+---  END MAIL MESSAGE  ---

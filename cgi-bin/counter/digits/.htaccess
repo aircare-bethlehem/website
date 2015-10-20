@@ -1,0 +1,4 @@
+AuthName garcia.packetpushers.com
+AuthType Basic
+Require valid-user
+AuthUserFile /home/web/g/garcia.packetpushers.com///cgi-bin/counter/digits/.htpasswd

@@ -1,0 +1,69 @@
+ChatMachine 1.1 installation. 
+
+Few steps to install ChatMachine on your server
+
+1.	To install ChatMachine you need a FTP account on your web server, 
+a CGI directory and a good FTP Client with CHMOD feature. Using a Telnet account the installation is 
+very easy and fast.
+
+2.	Unpack ChatMachine package and delete all "dummyfile" files before starting installation.
+
+3.	Select a CGI directory of your web server and create the chat subdirectory. 
+For example : if the CGI directory is "/www/cgi-bin", create a new "/www/cgi-bin/chat" directory.
+
+4.	Copy all files and sub-directories from ChatMachine package to the new
+directory (upload them, using FTP).
+Tip : Upload perl files as ASCII files (not binary).
+
+5.	If Perl binary file ("perl") is not in "/usr/bin" directory, then change FIRST line 
+(and ONLY first line) of all ChatMachine perl files (extension .pl).
+For example : if Perl binary file is in "/usr/local/bin" directory, then FIRST line of perl 
+scripts must be :
+
+#!/usr/local/bin/perl
+
+6.	Edit "include.pl" file to meet your server settings and your preference.
+For quick start, edit only required settings :
+
+	- Directory setting ($chatdir only, if you did not change directory names of ChatMachine
+	      package).
+	- Script Url ($scriptUrl). You must set correct URL to ChatMachine
+	      scripts. <BR>For example : "http://www.myserver.com/cgi-bin/chat".
+	      This setting replaces "#script_url" in templates.
+	- HTML Url ($htmlUrl). You must set correct URL to ChatMachine
+	      HTML resources (only images in this package) . 
+	      For example : "http://www.myserver.com/cgi-bin/chat/images". 
+	   This setting replaces "#html_url" in templates.
+
+7.	Test "include.pl" file : use "perl test.pl" or "test.pl" commands. 
+Without error messages, all is right. You need a telnet account.
+"test.pl" script is usefull to check all settings in "include.pl" file. Use it !
+
+8.      Set permissions : ChatMachine requires correct files - directories permissions
+to work properly. Go to ChatMachine CGI directory using Telnet or a good FTP client and make these changes.
+If you are using Telnet, you can run "install.sh" script instead : try "sh install.sh".
+
+Set script file to '755'
+
+chmod 755 login.pl
+chmod 755 adm.pl
+chmod 755 chat.pl
+
+Set data directories to '777'
+
+chmod 777 users
+chmod 777 logged
+chmod 777 mesg
+chmod 777 laction
+chmod 777 system
+chmod 777 system/*
+
+9.	Test your chat ! Call in your browser the "login.pl" script and login in 
+chat. Withour error messages, all is right.
+Mail me (nards@iol.it) to say "I use ChatMachine ..." [smile] 
+
+If you need help, please subscribe to ChatMachine mailing list and post a message. 
+
+Vittorio Nardone - nards@iol.it
+
+

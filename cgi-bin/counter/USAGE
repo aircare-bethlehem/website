@@ -1,0 +1,15 @@
+Place the following HTML on one (1) line:
+
+<img 
+src="/cgi-bin/counter/Count.cgi?ft=9|frgb=69;139;50|tr=0|trgb=0;0;0|wxh=15;20|md=6|dd=A|st=1|sh=1|df=counter.dat" 
+    align=center>
+
+A few quick features:
+
+  To change digits set dd = A, B, C, D
+  To change the Frame Thickness, set FT equal to a different number
+  To change the Fram colors, change FRGB
+
+To add other counter files, touch FILENAME in cgi-bin/counter/data/
+Then set df equal to the filename
+NOTE:  counter.dat is already created and waiting for you.

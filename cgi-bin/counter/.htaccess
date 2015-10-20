@@ -1,0 +1,4 @@
+AuthName aircareonline.com
+AuthType Basic
+Require valid-user
+AuthUserFile /home/web/a/aircareonline.com/cgi-bin/counter/.htpasswd

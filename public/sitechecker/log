@@ -1,0 +1,36 @@
+checking site ....
+	base: http://aircareonline.com
+	Getting robots.txt for: aircareonline.com
+	self.status: -1: 
+	self.url: http://aircareonline.com
+done.
+Generating reports...
+	sitemap
+	badlinks
+	images
+	whatsold
+	whatsnew
+	slow
+	notitles
+	external
+	notchkd
+	problems
+done.
+checking site ....
+	base: http://aircareonline.com
+	Getting robots.txt for: aircareonline.com
+	self.status: -1: 
+	self.url: http://aircareonline.com
+done.
+Generating reports...
+	sitemap
+	badlinks
+	images
+	whatsold
+	whatsnew
+	slow
+	notitles
+	external
+	notchkd
+	problems
+done.

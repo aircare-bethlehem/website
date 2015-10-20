@@ -1,0 +1,21 @@
+  -----------------------------
+  Basic Request For Information
+  -----------------------------
+
+       First Name:  [*fname]
+        Last Name:  [*lname]
+          Address:  [*address1]
+                    [address2] 
+             City:  [*city]
+            State:  [*state]
+          Country:  [*country]
+      Postal Code:  [*postal]
+
+     Phone Number:  [*phone]
+       Fax Number:  [fax]
+      
+    Email Address:  [email]
+      
+       Email Info?  [emailinfo]
+         Fax Info?  [faxinfo]
+

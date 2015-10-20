@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<META HTTP-EQUIV="Refresh" CONTENT="60; URL=#script_url/adm.pl?id=#now&passwd=#%passwd&nick=#%nick&tmpl=16&cmd=noCMD">
+</HEAD>
+<BODY bgcolor=#4B5889 text=#FFFFFF link=#7FFFD4 alink=#7FFFD4 vlink=#7FFFD4>
+<TABLE WIDTH="100%" BORDER=0 CELLSPACING=0>
+<TR BGCOLOR="#7F000000"><TD COLSPAN=2>BANNED IP-ADDRESSES</TD></TR>
+<TR BGCOLOR="#7F000000"><TD>IP-Add</TD><TD>Unban</TD></TR>
+#bi_list01
+</TABLE>
+<BR>
+<TABLE WIDTH="100%" BORDER=0>
+<TR><TD>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="cmd" type="hidden" value="noCMD">
+<INPUT NAME="tmpl" type="hidden" value="08">
+<INPUT type="submit" value="See account">
+</FORM>
+</TD><TD>
+<FORM METHOD="GET" ACTION="#script_url/adm.pl?id=#now">
+<INPUT NAME="passwd" type="hidden" value="#%passwd">
+<INPUT NAME="nick" type="hidden" value="#%nick">
+<INPUT NAME="cmd" type="hidden" value="noCMD">
+<INPUT NAME="tmpl" type="hidden" value="16">
+<INPUT type="submit" value="Update">
+</FORM>
+</TD></TR>
+</TABLE>
+</BODY>
+</HTML>

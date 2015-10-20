@@ -1,0 +1,147 @@
+#############################################
+# sample configuration file for Count 1.5
+# by muquit@semcor.com
+# 09/13/95, 9:15 PM
+##############################################
+#
+# Note: NO EMPTY LINE IS ALLOWED IN THIS FILE
+#
+##############################################
+# Ignore hosts block, you might want to ignore the local sites.
+# THIS IS A REQUIRED BLOCK. If you do not want to ignore any hosts from
+# counting, just put { on one line and } on the next line but make sure
+# the braces exist!
+######
+#
+# wildcard can be used to ignore a entire domain, if the IP address starts
+# with a number >= 192 and <= 223, the network is Class C, to ignore the
+# entire domain of class C, put a * at the 4th octet like,
+# 192.134.144.*
+# if the IP address starts with a number >= 128 and <= 191, the network class
+# is B, to ignore the entire domain of class B, put a * at the 3rd octet like,
+# 128.116.* or 128.116.*.*
+# if  the IP address starts with a number < 128, the network class is A
+# to ignore the entire domain of class A, put a * at the 2nd octet like,
+# 20.* or 20.*.*.*
+#
+# you can use the full IP address for a specific host ofcourse, but if
+# wildcard exist for this domain, it will take precedence
+#
+{
+}
+####
+# Access authentication aka "Counter Terrorism" handling block
+# This block must be present if you compile with -DACCESS_AUTH option
+# If you do not compile with -DACCESS_AUTH, this block will not be
+# read
+# Each line contain the hostname/IP address of the host who can access the
+# counter remotely. Yout hostname must be here.
+###
+{
+    www.bev.net
+    bev.net
+    internetunlimited.com
+    www.internetunlimited.com
+    www.iuinc.com
+    iuinc.com
+    wopr
+    localhost 
+    www.iver.com
+    www.faxexpress.com
+    www.facsimile.com
+    www.wtkz.com
+    wtkz.com
+    www.princeton.net
+    www.mail-order.com
+    www.parrotmountain.com
+    www.trineinc.com
+    trineinc.com
+    www.virtualtheater.com
+    virtualtheater.com
+    www.123ukdomainme.co.uk
+    123ukdomainme.co.uk
+    www.interactiv-arts.com
+    interactiv-arts.com
+    www.artlegends.com
+    artlegends.com
+    www.divorcesource.com
+    divorcesource.com
+    www.123domainme.com
+    123domainme.com
+    www.despair.mudservices.com
+    despair.mudservices.com
+    www.mudservices.com
+    *.*.mudservices.com
+    www.oasis.mudservices.com
+    oasis.mudservices.com
+    www.3e14.com
+    3e14.com
+    www.judges.com
+    www.fl.judges.com
+    judges.com
+    *.judges.com
+    *.*.judges.com
+    cyber-power.com
+    www.cyber-power.com
+    www.4domainnames.com
+    4domainnames.com   
+    www.123emailme.com
+    123emailme.com
+    www.ouipels.com
+    ouipels.com
+    www.sexittome.com
+    sexittome.com
+    netmares.com
+    www.netmares.com
+    brownfld.com
+    www.brownfld.com
+    themusicshop.com
+    www.themusicshop.com
+    maelstorm.mudservices.com
+    www.maelstorm.mudservices.com	
+    www.superdrag.com
+    superdrag.com
+    www.amishcomic.com
+    amishcomic.com
+    www.berksprowebdesign.com
+    berksprowebdesign.com
+    www.plastic-surgery.net
+    plastic-surgery.net
+    www.scottgas.com
+    scottgas.com
+    www.fbcking.com
+    fbcking.com
+    www.xxx-buttman.com
+    xxx-buttman.com
+    205.147.235.72
+    www.Prye.com
+    Prye.com
+    www2.Prye.com
+    www.prye.com
+    prye.com
+    www2.prye.com
+    www.matty.iuinc.com
+    matty.iuinc.com
+    www.Matty.iuinc.com
+    matty.iuinc.com
+    www.thezambonis.com
+    thezambonis.com
+    www.Thezambonis.com
+    thezambonis.com	
+    www.megahotvideo.com
+    megahotvideo.com
+    www.Megahotvideo.com
+    megahotvideo.com
+    cablineuk.com
+    www.cablineuk.com
+    Cablineuk.com
+    www.Cablineuk.com
+    www.mojave.org
+    mojave.org
+    www.doubleplaybattery.com
+    doubleplaybattery.com
+    www.rkkustom.com
+    rkkustom.com
+    count.iuinc.com
+    www.count.iuinc.com
+}

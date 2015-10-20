@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!-- Local time is #time ->
+<HTML>
+<HEAD>
+<TITLE>ChatMachine98</TITLE>
+<META NAME="Author" CONTENT="Vittorio Nardone (nards@iol.it)">
+</HEAD>
+<BODY BGCOLOR="#FFFFFF">
+
+<TABLE BORDER=0>
+<TR><TD>
+<A HREF="http://www.chatmachine.it"><img src="#html_url/logo98.gif" alt="ChatMachine98"></A>
+<TD><IMG SRC="#html_url/biglogo.gif" alt="ChatMachine"></A>
+</TR>
+</TABLE>
+
+<FORM METHOD="POST" ACTION="#script_url/login.pl?id=#now">
+
+    <div align="center"><center><table border="0" cellspacing="0">
+        <tr>
+            <th bgcolor="#0080B0">Nickname: </th>
+            <td bgcolor="#0080B0"><input type="text" size="20" name="nick" maxlenght="20"> </td>
+            <td align="center" rowspan="3" bgcolor="#0080B0">These fields
+            are <b>required</b>.</td>
+        </tr>
+        <tr>
+            <th bgcolor="#0080B0">Password: </th>
+            <td bgcolor="#0080B0"><input type="password" size="20" name="passwd" maxlenght="20"> </td>
+        </tr>
+        <tr>
+            <th bgcolor="#0080B0">Room: </th>
+            <td bgcolor="#0080B0"><select name="room" size="1">
+		#roomlist00
+            </select> </td>
+        </tr>
+        <tr>
+            <td colspan="3" bgcolor="#FFFFFF"><br>
+            </td>
+        </tr>
+        <tr>
+            <th bgcolor="#CF0000">Name: </th>
+            <td bgcolor="#CF0000"><input type="text" size="20" name="name" maxlenght="20"> </td>
+            <td align="center" rowspan="3" bgcolor="#CF0000">These fields are not required.</td>
+        </tr>
+        <tr>
+            <th bgcolor="#CF0000">E-mail address: </th>
+            <td bgcolor="#CF0000"><input type="text" size="20" name="email" maxlenght="20"> </td>
+        </tr>
+    </table>
+    </center></div>
+    <center> <input type="submit" value="Chat Login"></center>
+</form>
+
+<center>
+<a href="http://www.chatmachine.it">Powered by ChatMachine</a><br>
+</center>
+</body>
+</html>
