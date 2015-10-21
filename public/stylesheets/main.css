@@ -1,43 +1,45 @@
 html {
 	-webkit-font-smoothing: antialiased;
 }
-
 body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 	background-color: #c6e2ff;
+	color: #111111;
 	margin: 0 auto;
 }
 
-a:{color:#990000} a:vlink{color:#0000A0} a:hover{color:#000000}
+a {color: #111111;}
+a:vlink {color:#0000A0;}
+a:hover {color:#111111;}
 
 a.one:link {color:#ffffff;text-decoration:none;}
 a.one:visited {color:#ffffff;text-decoration:none;}
-a.one:hover {color:#000000;text-decoration:underline;}
+a.one:hover {color:#111111;text-decoration:underline;}
 a.one:active {color:#dc143c;text-decoration:underline;}
 
 a.two:link {color:#008000;text-decoration:none;}
 a.two:visited {color:#008000;text-decoration:none;}
-a.two:hover {color:#000000;text-decoration:underline;}
+a.two:hover {color:#111111;text-decoration:underline;}
 a.two:active {color:#dc143c;text-decoration:underline;}
 
 a.four:link {color:#4682b4;text-decoration:none;}
 a.four:visited {color:#4682b4;text-decoration:none;}
-a.four:hover {color:#000000;text-decoration:underline;}
+a.four:hover {color:#111111;text-decoration:underline;}
 a.four:active {color:#dc143c;text-decoration:underline;}
 
 a.five:link {color:#ffffff;text-decoration:none;}
 a.five:visited {color:#ffffff;text-decoration:none;}
 a.five:hover {color:#dc143c;text-decoration:none;}
-a.five:active {color:#000000;text-decoration:none;}
+a.five:active {color:#111111;text-decoration:none;}
 
 a.six:link {color:#008000;text-decoration:none;}
 a.six:visited {color:#008000;text-decoration:none;}
 a.six:hover {color:#dc143c;text-decoration:none;}
-a.six:active {color:#000000;text-decoration:none;}
+a.six:active {color:#111111;text-decoration:none;}
 
 a.seven:link {color:#006595;text-decoration:underline;}
 a.seven:visited {color:#006595;text-decoration:underline;}
-a.seven:hover {color:#000000;text-decoration:underline;}
+a.seven:hover {color:#111111;text-decoration:underline;}
 a.seven:active {color:#dc143c;text-decoration:underline;}
 hr {
 	max-width: 90%;
@@ -48,13 +50,13 @@ hr {
 a:{
 	color:#990000;
 }
-
+/*
 a:visited{
 	color:#0000A0;
-}
+}*/
 
 a:hover{
-	color: #000000;
+	color: #111111;
 }
 
 td#call{
@@ -149,39 +151,42 @@ div.list{
  llg: black, blue
  ml: black,
 */
+.black {
+	color: #111111;
+}
 
 .smblack {
 	font-family: Verdana, Arial, Helvetica;
 	font-size: 10px;
-	color: #000000;
+	color: #111111;
 	text-decoration: none;
 }
 
 .asmblack {
 	font-family: Arial, Helvetica;
 	font-size: 11px;
-	color: #000000;
+	color: #111111;
 	text-decoration: none;
 }
 
 .mmblack {
 	font-family: Verdana, Arial, Helvetica;
 	font-size: 11px;
-	color: #000000;
+	color: #111111;
 	text-decoration: none;
 }
 
 .bdblack {
 	font-family: Arial, Helvetica;
 	font-size: 12px;
-	color: #000000;
+	color: #111111;
 	text-decoration: none;
 }
 
 .dmblack {
 	font-family: Arial, Helvetica;
 	font-size: 13px;
-	color: #000000;
+	color: #111111;
 	font-weight:bold;
 	text-decoration: none
 }
@@ -189,7 +194,7 @@ div.list{
 .bgblack {
 	font-family: Arial, Helvetica;
 	font-size: 14px;
-	color: #000000;
+	color: #111111;
 	font-weight:bold;
 	text-decoration: none;
 }
@@ -198,14 +203,14 @@ div.list{
 .llblack {
 	font-family: Arial, Helvetica;
 	font-size: 14px;
-	color: #000000;
+	color: #111111;
 	text-decoration: none
 }
 
 .lgblack {
 	font-family: "Times New Roman", Arial, Helvetica;
 	font-size: 16px;
-	color: #000000;
+	color: #111111;
 	font-weight:bold;
 	text-decoration: none
 }
@@ -213,7 +218,7 @@ div.list{
 .ldblack {
 	font-family: Arial, Helvetica;
 	font-size: 16px;
-	color: #000000;
+	color: #111111;
 	font-weight: bold;
 	text-decoration: none
 }
@@ -221,7 +226,7 @@ div.list{
 .xlblack {
 	font-family: Arial, Helvetica;
 	font-size: 17px;
-	color: #000000;
+	color: #111111;
 	background-color: #ffff00;
 	text-decoration: none;
 }
@@ -229,7 +234,7 @@ div.list{
 .llgblack {
 	font-family: Arial, "Times New Roman", Helvetica;
 	font-size: 20px;
-	color: #000000;
+	color: #111111;
 	font-weight:bold;
 	text-decoration: none
 }
@@ -237,7 +242,7 @@ div.list{
 .mlblack {
 	font-family: "Times New Roman", Arial, Helvetica;
 	font-size: 20px;
-	color: #000000;
+	color: #111111;
 	font-weight:bold;
 	text-decoration: none
 }
@@ -408,7 +413,7 @@ a.WHITE {
 }
 
 a.BLACK {
-	color: #000000;
+	color: #111111;
 	text-decoration: none
 }
 
@@ -423,29 +428,38 @@ div.specials{
 	font-family: "Josefin Sans", sans-serif;
 	margin: 0 auto;
 	height: 44px;
-	background-color: black;
+	background-color: #111111;
 	color: white;
 }
 span.special {
 	font-size: .9em;
 	height: 35px;
 	padding: 4px;
-	width: 28%;
+	width: 30%;
 }
-span.special a{
+a .special-link{
 	text-decoration: none;
+	color: white;
 }
+
+a:visited .special-link{
+	text-decoration: none;
+	color: white;
+}
+
 span.special a:visited{
 	text-decoration: none;
 	color: white;
 }
+
 span.left{
 	float: left;
-	margin-left: 20%;
+	margin-left: 18%;
 }
 span.right{
+	width: 32%;
 	float: right;
-	margin-right: 20%;
+	margin-right: 18%;
  }
 
 /*Specials page*/
@@ -467,7 +481,7 @@ div.coupon {
 	line-height: 2.3;
 	width: 400px;
 	border-collapse: collapse;
-	border: 3px dashed black;
+	border: 3px dashed #111111;
 	padding: 10px;
 	margin: 20px auto;
 	background-color: #82c2ff;
@@ -499,7 +513,6 @@ div.title {
 }
 
 div.benefits {
-	/*min-height: 100px;*/
 	margin-bottom: 25px;
 	display: inline-block;
 }
@@ -524,8 +537,8 @@ p.coupon {
 
 div.product {
 	font-family: Helvetica;
-	padding: 15px;
-	font-size: 1.2em;
+	padding: 10px;
+	font-size: 1.1em;
 }
 
 div.spacing{
@@ -534,4 +547,13 @@ div.spacing{
 
 div.specs{
 	font-size: .9em;
+}
+
+center.info-spacing{
+	margin: 20px;
+}
+
+.highlight {
+	padding: 5px;
+	background-color: #e6f2ff;
 }
